@@ -41,6 +41,7 @@ Start apps in 3 separate terminals:
 ```powershell
 .\scripts\start_producer.ps1
 ```
+<img width="1122" height="562" alt="image" src="https://github.com/user-attachments/assets/05c3c27b-89c7-48ec-bb4a-27d825f706ab" />
 
 ```powershell
 .\scripts\start_streaming.ps1
@@ -73,11 +74,22 @@ Set `CHECKPOINT_MODE=reuse` if you want to reuse `checkpoints/crypto_runtime` in
 ## Dashboard Features
 
 - Live Kafka consumption from `raw_events`
+  <img width="1133" height="420" alt="newplot (2)" src="https://github.com/user-attachments/assets/3b4a9dea-8c90-4346-89d9-5ea43be20c01" />
+
 - Real-time symbol trend chart
 - Latest price snapshot chart
+  <img width="652" height="420" alt="newplot (3)" src="https://github.com/user-attachments/assets/26b5b81c-903d-4a28-a21c-82628cda3798" />
+
 - 3-minute symbol summary table
+  <img width="1522" height="188" alt="image" src="https://github.com/user-attachments/assets/4b92dcfe-000e-4592-a69e-8c00a29c4216" />
+
 - Live tape (time, symbol, partition, offset)
+  <img width="1526" height="415" alt="image" src="https://github.com/user-attachments/assets/5ea39c95-27c6-46ca-b686-b47e2ba35de2" />
+
 - Sidebar controls for refresh interval, topic, symbols, and memory window
+  <img width="1600" height="724" alt="image" src="https://github.com/user-attachments/assets/a2392cbe-c6ae-46d2-bbc8-3dd472f26b48" />
+  <img width="452" height="851" alt="image" src="https://github.com/user-attachments/assets/e9b3fa17-a62a-4f41-b7d3-45a7a526dda4" />
+
 
 ## Stop
 
@@ -105,6 +117,7 @@ Verify:
 ```
 
 ### Dashboard opens but shows no data
+<img width="1210" height="200" alt="image" src="https://github.com/user-attachments/assets/6ebf388e-4ae2-4b2c-bb0e-a7ee3f6f401f" />
 
 - Confirm Kafka is running: `docker ps`
 - Confirm producer is running and logging `Sent: ...`
